@@ -23,7 +23,7 @@ export default {
       { property: "og:title", content: config.title || process.env.npm_package_name || '' },
       { property: "og:url", content: 'https://hypermob.co.uk' },
       { property: "og:site_name", content: 'hypermob.co.uk' },
-      { property: "og:type", content: 'https://hypermob.co.uk/img/logo.png' },
+      { property: "og:image", content: 'https://hypermob.co.uk/img/logo.png' },
 
     ],
     link: [
