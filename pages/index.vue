@@ -15,6 +15,8 @@
         <a href="mailto:contact@hypermob.co.uk" target="_blank" class="button--green">Contact</a>
         <a href="https://github.com/hypermob" target="_blank" class="button--grey">GitHub</a>
       </div>
+
+      <p class="status available" title="Available for contracting"></p>
     </div>
   </div>
 </template>
@@ -40,13 +42,14 @@ export default {
 }
 
 .subtitle {
+  margin: 1em auto;
+
   font-weight: 300;
-  font-size: 30px;
+  font-size: 20px;
   color: #526488;
   word-spacing: 5px;
   padding-bottom: 15px;
 }
-
 .description {
   max-width: 24em;
   margin: 0 auto;
@@ -55,10 +58,35 @@ export default {
 .specific {
   margin: 1em auto;
   color: #666;
-  max-width: 27em;
+  max-width: 20em;
 }
 
 .links {
   padding-top: 15px;
+}
+
+.status::before {
+  content: '\25CF';
+}
+
+.status {
+  margin: 1em auto;
+}
+
+.available::before {
+  color: green;
+}
+.available::after {
+  content: ' Available';
+}
+
+@media only screen and (min-width: 600px) {
+  .subtitle {
+    font-size: 30px;
+  }
+
+  .specific {
+    max-width: 27em;
+  }
 }
 </style>

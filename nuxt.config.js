@@ -10,7 +10,18 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: config.description || process.env.npm_package_description || '' }
+      { hid: 'description', name: 'description', content: config.description || process.env.npm_package_description || '' },
+      { name: "keywords", content: config.keywords && config.keywords.join(',') },
+      { name: "author", content: "Carlos Rodrigues" },
+      { name: "robots", content: 'index, follow' },
+
+      { property: "og:locale", content: 'website' },
+      { property: "og:type", content: 'website' },
+      { property: "og:title", content: config.title || process.env.npm_package_name || '' },
+      { property: "og:url", content: 'https://hypermob.co.uk' },
+      { property: "og:site_name", content: 'hypermob.co.uk' },
+      { property: "og:type", content: 'https://hypermov.co.uk/img/logo.png' },
+
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -19,7 +30,7 @@ export default {
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: '#fff' },
+  loading: { color: '#ff8c00' },
   /*
   ** Global CSS
   */
@@ -40,10 +51,10 @@ export default {
   */
   modules: [
     // Doc: https://bootstrap-vue.js.org/docs/
-    'bootstrap-vue/nuxt',
+    // 'bootstrap-vue/nuxt',
     // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios',
-    '@nuxtjs/pwa',
+    // '@nuxtjs/axios',
+    // '@nuxtjs/pwa',
   ],
   /*
   ** Axios module configuration

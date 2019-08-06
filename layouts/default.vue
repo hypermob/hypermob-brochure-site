@@ -1,9 +1,7 @@
 <template>
   <div class="app">
     <nuxt class="content" />
-    <footer>
-      Hypermob Ltd is a company registered in England under number 12108411. 
-    </footer>
+    <footer>Hypermob Ltd is a company registered in England under number 12108411.</footer>
   </div>
 </template>
 
@@ -32,8 +30,23 @@ html {
 footer {
   /* font-size: 0.5em; */
   /* color: #bbb; */
+  font-size: 0.5em;
   font-weight: 300;
   margin: 0 auto;
+}
+
+@media only screen and (min-width: 360px) {
+  footer {
+    /* font-size: 30px; */
+    font-size: 0.7em;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  footer {
+    /* font-size: 30px; */
+    font-size: 1em;
+  }
 }
 
 *,
