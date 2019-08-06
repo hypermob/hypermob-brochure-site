@@ -7,6 +7,9 @@ export default {
   */
   head: {
     title: config.title || process.env.npm_package_name || '',
+    htmlAttrs: {
+      lang: 'en'
+    },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -20,7 +23,7 @@ export default {
       { property: "og:title", content: config.title || process.env.npm_package_name || '' },
       { property: "og:url", content: 'https://hypermob.co.uk' },
       { property: "og:site_name", content: 'hypermob.co.uk' },
-      { property: "og:type", content: 'https://hypermov.co.uk/img/logo.png' },
+      { property: "og:type", content: 'https://hypermob.co.uk/img/logo.png' },
 
     ],
     link: [

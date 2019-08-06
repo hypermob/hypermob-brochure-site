@@ -13,7 +13,12 @@
 
       <div class="links">
         <a href="mailto:contact@hypermob.co.uk" target="_blank" class="button--green">Contact</a>
-        <a href="https://github.com/hypermob" target="_blank" class="button--grey">GitHub</a>
+        <a
+          href="https://github.com/hypermob"
+          target="_blank"
+          rel="noopener"
+          class="button--grey"
+        >GitHub</a>
       </div>
 
       <p class="status available" title="Available for contracting"></p>
