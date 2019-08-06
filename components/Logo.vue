@@ -38,6 +38,6 @@
 <style>
 .hypermobLogo {
   fill: #ff8c00;
-  padding: 0 1em;
+  /* padding: 0 1em; */
 }
 </style>

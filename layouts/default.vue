@@ -33,6 +33,9 @@ footer {
   font-size: 0.5em;
   font-weight: 300;
   margin: 0 auto;
+  /*safari fix*/
+  width: 100%;
+  text-align: center; 
 }
 
 @media only screen and (min-width: 360px) {

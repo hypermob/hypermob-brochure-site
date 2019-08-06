@@ -44,25 +44,30 @@ export default {
   justify-content: center;
   align-items: center;
   text-align: center;
+
+  padding: 1em;
 }
 
 .subtitle {
   margin: 1em auto;
 
+  font-family: serif;
   font-weight: 300;
-  font-size: 20px;
-  color: #526488;
+  font-size: 1.2em;
+  color: #b07806;
+
+
   word-spacing: 5px;
-  padding-bottom: 15px;
+  padding-bottom: 0.5em;
 }
 .description {
-  max-width: 24em;
+  max-width: 25em;
   margin: 0 auto;
 }
 
 .specific {
   margin: 1em auto;
-  color: #666;
+  color: #1b459a;
   max-width: 20em;
 }
 
